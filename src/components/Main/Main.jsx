@@ -20,7 +20,7 @@ const Main = () => {
                     <p><span>Hey, Ali Zulfiqar</span></p>
                     <p>How can i assist you?</p>
                 </div>
-                <div className="cards">
+                <div onClick={()=>alert("Sorry, the random question feature is not available yet. I'm working on it. Thanks for your patience! - Ali Zulfiqar")} className="cards">
                     <div className="card">
                         <p>Suggest some beautiful places to see on my upcoming roadtrips</p>
                         <img src={assets.compass_icon} alt="" />
@@ -33,7 +33,7 @@ const Main = () => {
                         <p>Brainstrom team bonding activities for our work retreat</p>
                         <img src={assets.message_icon} alt="" />
                     </div>
-                    <div className="card">
+                    <div className="card excep">
                         <p>Improve the readability of the following code</p>
                         <img src={assets.code_icon} alt="" />
                     </div>
@@ -41,11 +41,11 @@ const Main = () => {
                 </>
                 :<div className='result'>
                     <div className="result-title">
-                        <img src={assets.user_icon} alt="" />
+                        <img  src={assets.user_icon} alt="" />
                         <p>{recentPrompt}</p>
                     </div>
                     <div className="result-data">
-                        <img src={assets.gemini_icon} alt="" />
+                        <img  src={assets.gemini_icon} alt="" />
                         {loading
                         ?
                     <>
@@ -64,10 +64,10 @@ const Main = () => {
                 
                 <div className="main-bottom">
                     <div className="search-box">
-                        <input onChange={(e)=>setInput(e.target.value)} value={input} type="text" placeholder='How are you?' />
+                        <input onChange={(e)=>setInput(e.target.value)} value={input} type="text" placeholder='Enter your prompt...' />
                         <div>
-                            <img src={assets.gallery_icon} alt="" />
-                            <img src={assets.mic_icon} alt="" />
+                            <img onClick={()=>alert("Sorry, the video and audio features are not available yet. I'm working on making on it. Thanks for your patience! - Ali Zulfiqar")} src={assets.gallery_icon} alt="" />
+                            <img onClick={()=>alert("Sorry, the video and audio features are not available yet. I'm working on making on it. Thanks for your patience! - Ali Zulfiqar")} src={assets.mic_icon} alt="" />
                            {input?<img onClick={()=>onSent()} src={assets.send_icon} alt="" />:null} 
                         </div>
                     </div>

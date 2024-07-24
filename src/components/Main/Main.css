@@ -16,6 +16,7 @@
 .main .nav img{
     width: 40px;
     border-radius: 50%;
+    border: 2px solid lightgray;
 }
 .main-container{
     max-width: 900px;
@@ -157,9 +158,24 @@
     line-height: 1.8;
 }
 @media (max-width:600px) {
+    /* proposed */
+    /* start */
+    .excep{
+        display: none;
+    }
+    .main .greet{
+        margin: 10px 0px;
+    }
+    .main .greet span{
+        font-size:-webkit-xxx-large ;
+    }
+    .main .card{
+        height: 113px;
+    }
+    /* end */
     .main-bottom input{
         flex: none;
-        width: 150px;
+        width: 180px;
     }
     .main-bottom img{
         width: 20px;
